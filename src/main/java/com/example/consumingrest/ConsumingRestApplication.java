@@ -18,7 +18,7 @@ public class ConsumingRestApplication {
 	}
 /*
 	@Bean
-	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
+	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {-
 		return args -> {
 			ChuckQuote quote = restTemplate.getForObject(
 					"https://api.chucknorris.io/jokes/random", ChuckQuote.class);
