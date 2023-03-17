@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ChuckController {
     public static final String CHUCK = "/chuck";
     @Autowired
-    GreetingService greetingService;
+    NBAService greetingService;
     @GetMapping
     public String getChuckQuote(Model model){
-        ChuckQuote q = greetingService.getChuckQuote();
-        model.addAttribute("frase", q.value());
+        ChuckQuote.Dada q = greetingService.getChuckQuote();
+        model.addAttribute("nba", q.data());
         return "chuck";
     }
 }

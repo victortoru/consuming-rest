@@ -11,11 +11,11 @@
     <h2>MP03-UF6 Spring Session</h2>
 </div>
 <div class="container-fluid border pt-2 d-flex justify-content-center">
-    <div class="card" style="width: 15rem;">
+    <div class="card" style="width: 15rem;" th:each = "el:${nba}">
         <img class="card-img-top" src="https://source.unsplash.com/random">
         <div class="card-body">
             <h5 class="card-title">Quote of the day</h5>
-            <p class="card-text" th:text="${frase}"></p>
+            <p class="card-text" th:text="${el.first_name()}"></p>**/http://localhost:8080/chuck
             <a href="#" class="btn btn-primary" onclick="window.location.reload();">Refresh</a>
         </div>
     </div>

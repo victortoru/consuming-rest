@@ -11,21 +11,9 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class ConsumingRestApplication {
-	private static final Logger log = LoggerFactory.getLogger(ConsumingRestApplication.class);
-
 	public static void main(String[] args) {
 		SpringApplication.run(ConsumingRestApplication.class, args);
 	}
-/*
-	@Bean
-	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {-
-		return args -> {
-			ChuckQuote quote = restTemplate.getForObject(
-					"https://api.chucknorris.io/jokes/random", ChuckQuote.class);
-			log.info(quote.toString());
-		};
-	}
 
- */
 
 }
